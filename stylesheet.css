@@ -1,30 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Ubuntu:wght@300&display=swap');
+;
 *{
     margin: 0;
     padding: 0;
 }
 body, html{
-    min-width: 100%;
     min-height: 100vh; 
 }
-
 body{
-    background: url("/assets/ZigZag.png") ;
+    background: url("/assets/ZigZag.png") no-repeat;
     background-size: cover;
 }
-
- .wrap-container{
-    margin: 80px auto;
-    width: 90%;
-    min-width: 400px;
-    height: 700px;
+ .outer-container{
+    height: 700px;  
+    text-align: center;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 40px 40px -20px #3C7B61;
-    position: relative;
-}
-
+ }
+ .btn-container{
+    display: flex; justify-content: flex-end;
+ }
 .close-btn{
-    position: absolute;
-    top:15px;
-    right: 15px;
+    background: url("/assets/Group\ 21.png") no-repeat ;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    
+}
+.inner-content{
+    
+    padding: 0 10%;
+    display: flex;
+    flex:2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.happy-icon{
+    width: 110px;
+    height: 100px;
+    background: url("/assets/Group.jpeg");
+    margin: 8% auto;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    
+}
+.confirmation-message {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    margin:0;
+    padding-bottom: 8%;
+}
+.order-container{
+    font-family: 'Montserrat', sans-serif;  
+    text-align: left;
+    background-color: #F0FFF5;
+    border-radius: 5px;;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+.item-img, .item-type, .item-price {
+    margin: 0;
+}
+.item-description{
+    margin-left:20px;
+    flex:2;
+}
+ .item-type {
+    font-weight: 600;
+    font-size: 15px;
+} 
+.change {
+    margin: 0 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #467A66;
+}
+.order-submit{
+    width: 100%;
+    margin: 5% auto;
+    padding: 5% 30%;
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #46A67E;
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.page-indicator{
+    margin: 5% auto;
+    width: 50%;
+    height: 5%;
+    background: url("/assets/Group\ 8.png") no-repeat center;  
 }
