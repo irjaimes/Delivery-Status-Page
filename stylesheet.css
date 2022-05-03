@@ -5,6 +5,7 @@
     padding: 0;
 }
 body, html{
+    min-width: 100%;
     min-height: 100vh;  
 } 
 body{
@@ -13,15 +14,12 @@ body{
 }
  .box-container{
     width:90%;
-    height: 700px;  
+    height: 600px;  
     text-align: center;
     margin: 10% auto;
     display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-     
-    
     align-items: center;
+    position: relative;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 40px 40px -20px #3C7B61;
@@ -31,20 +29,19 @@ body{
     background-position: center;
     width: 30px;
     height: 30px; 
-    align-self: flex-end;   
-    margin: 0;
-    padding: 15px 15px 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
-
 .inner-container{
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
-    padding: 5% 10%;   
+    padding: 20% 10%;   
+    text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
-    justify-content: center;
-
+    justify-content: space-between; 
 }
 .happy-icon{
     width: 110px;
@@ -52,7 +49,7 @@ body{
     background: url("/assets/Group.jpeg");
     margin: 0 auto;
 }
-h2{
+.inner-container > h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     margin: 0 ;  
@@ -64,15 +61,15 @@ h2{
     color:#828282;
       margin: 0;
 }
-.order-container{
+.food-selection{
     font-family: 'Montserrat', sans-serif;  
     text-align: left;
     background-color: #F0FFF5;
     border-radius: 5px;;
     display: flex;
-    flex-direction: row; 
+    /* flex-direction: row;  */
     align-items: center;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     margin:0; 
 }
 .item-img, .item-type, .item-price {
@@ -80,7 +77,6 @@ h2{
 }
 .item-description{
     margin-left:20px;
-  
 }
 h3{
     font-weight: 600;
@@ -105,9 +101,20 @@ h3{
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.page-indicator{
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    background: url("/assets/Group\ 8.png") no-repeat center;  
+.page-indicators{
+    display: flex;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dot-indicator{
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background: #d6d5d5;
+    margin: 30px 7px;
+}
+#current-page-indicator{
+    background: #46A67E;
 }
