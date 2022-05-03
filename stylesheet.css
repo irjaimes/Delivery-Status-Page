@@ -18,6 +18,7 @@ body{
     text-align: center;
     margin: 10% auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
     background-color: #ffffff;
@@ -54,7 +55,7 @@ body{
     font-size: 22px;
     margin: 0 ;  
 }
-.confirmation-message {
+.confirmation-message{
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -63,30 +64,31 @@ body{
 }
 .food-selection{
     font-family: 'Montserrat', sans-serif;  
-    text-align: left;
     background-color: #F0FFF5;
-    border-radius: 5px;;
+    border-radius: 5px;
     display: flex;
-    /* flex-direction: row;  */
+    justify-content: space-between;
     align-items: center;
-    /* justify-content: space-between;  */
     margin:0; 
 }
 .item-img, .item-type, .item-price {
     margin: 0;
+    text-align: left;
 }
 .item-description{
     margin-left:20px;
 }
-h3{
+.item-description > h3{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
 } 
-.change {
-    margin: 0 30px;
+.item-price{
+    font-size: 14px;
+}
+.change{
+    margin: 0 15px ;
     font-size: 13px;
     font-weight: 600;
-    text-decoration: none;
     color: #467A66;
 }
 .im-ready-submit{
