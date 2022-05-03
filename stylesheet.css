@@ -5,58 +5,64 @@
     padding: 0;
 }
 body, html{
-    min-height: 100vh; 
-}
+    min-height: 100vh;  
+} 
 body{
-    background: url("/assets/ZigZag.png") no-repeat;
+    background: url("/assets/ZigZag.png") ;
     background-size: cover;
 }
- .outer-container{
+ .box-container{
+    width:90%;
     height: 700px;  
     text-align: center;
     margin: 10% auto;
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
+     
+    
+    align-items: center;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 40px 40px -20px #3C7B61;
- }
- .btn-container{
-    display: flex; justify-content: flex-end;
  }
 .close-btn{
     background: url("/assets/Group\ 21.png") no-repeat ;
     background-position: center;
     width: 30px;
-    height: 30px;
-    margin: 8px;
-    
+    height: 30px; 
+    align-self: flex-end;   
+    margin: 0;
+    padding: 15px 15px 0;
 }
-.inner-content{
-    
-    padding: 0 10%;
+
+.inner-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5% 10%;   
     display: flex;
-    flex:2;
     flex-direction: column;
-    justify-content: space-between;
+    row-gap: 30px;
+    justify-content: center;
+
 }
 .happy-icon{
     width: 110px;
     height: 100px;
     background: url("/assets/Group.jpeg");
-    margin: 8% auto;
+    margin: 0 auto;
 }
-h1{
+h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
-    
+    margin: 0 ;  
 }
 .confirmation-message {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 26px;
-    margin:0;
-    padding-bottom: 8%;
+    color:#828282;
+      margin: 0;
 }
 .order-container{
     font-family: 'Montserrat', sans-serif;  
@@ -65,16 +71,18 @@ h1{
     border-radius: 5px;;
     display: flex;
     flex-direction: row; 
-    align-items: center; 
+    align-items: center;
+    justify-content: space-between; 
+    margin:0; 
 }
 .item-img, .item-type, .item-price {
     margin: 0;
 }
 .item-description{
     margin-left:20px;
-    flex:2;
+  
 }
- .item-type {
+h3{
     font-weight: 600;
     font-size: 15px;
 } 
@@ -85,9 +93,7 @@ h1{
     text-decoration: none;
     color: #467A66;
 }
-.order-submit{
-    width: 100%;
-    margin: 5% auto;
+.im-ready-submit{
     padding: 5% 30%;
     font-family: 'Montserrat', sans-serif;  
     font-weight: 600;
@@ -100,8 +106,8 @@ h1{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .page-indicator{
-    margin: 5% auto;
-    width: 50%;
-    height: 5%;
+    margin: 0;
+    width: 50px;
+    height: 50px;
     background: url("/assets/Group\ 8.png") no-repeat center;  
 }
