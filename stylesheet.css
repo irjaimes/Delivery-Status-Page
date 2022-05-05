@@ -9,7 +9,7 @@ body, html{
     min-height: 100vh;  
 } 
 body{
-    background: url("/assets/ZigZag.png") ;
+    background: url("https://assets.codepen.io/6060109/ZigZag.png") ;
     background-size: cover;
 }
  .box-container{
@@ -26,7 +26,7 @@ body{
     box-shadow: 0px 40px 40px -20px #3C7B61;
  }
 .close-btn{
-    background: url("/assets/Group\ 21.png") no-repeat ;
+    background: url("https://assets.codepen.io/6060109/food-close-x.png") no-repeat ;
     background-position: center;
     width: 30px;
     height: 30px; 
@@ -34,7 +34,7 @@ body{
     top: 10px;
     right: 10px;
 }
-.inner-container{
+.card1-container{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -46,11 +46,11 @@ body{
 }
 .happy-icon{
     width: 110px;
-    height: 100px;
-    background: url("/assets/Group.jpeg");
+    height: 110px;
+    background: url("https://assets.codepen.io/6060109/food-happy.png");
     margin: 0 auto;
 }
-.inner-container > h2{
+.card1-container > h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     margin: 0 ;  
@@ -60,7 +60,7 @@ body{
     font-size: 14px;
     line-height: 26px;
     color:#828282;
-      margin: 0;
+    margin: 0;
 }
 .food-selection{
     font-family: 'Montserrat', sans-serif;  
@@ -68,6 +68,7 @@ body{
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin:0; 
 }
@@ -75,10 +76,9 @@ body{
     margin: 0;
     text-align: left;
 }
-.item-description{
-    margin-left:20px;
-}
+
 .item-description > h3{
+    
     font-weight: 600;
     font-size: 14px;
 } 
@@ -86,7 +86,7 @@ body{
     font-size: 14px;
 }
 .change{
-    margin: 0 15px ;
+    margin: 5px 10px;
     font-size: 13px;
     font-weight: 600;
     color: #467A66;
@@ -119,4 +119,17 @@ body{
 }
 #current-page-indicator{
     background: #46A67E;
+}
+
+/* MEDIA QUERIES */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
 }
