@@ -13,8 +13,8 @@ body{
     background-size: cover;
 }
  .box-container{
-    width:90%;
-    height: 600px;  
+    width:80%;
+    height: 38rem;  
     text-align: center;
     margin: 10% auto;
     display: flex;
@@ -48,7 +48,6 @@ body{
     width: 110px;
     height: 110px;
     background: url("https://assets.codepen.io/6060109/food-happy.png") no-repeat;
-    background-size:contain;
     margin: 0 auto;
 }
 .card-container > h2{
@@ -92,17 +91,22 @@ body{
     font-weight: 600;
     color: #467A66;
 }
-.im-ready-submit{
+.im-ready-submit, .next, .track-on-map{
     padding: 5% 30%;
     font-family: 'Montserrat', sans-serif;  
     font-weight: 600;
     font-size: 15px;
     text-align: center;
     color: #ffffff;
-    background-color: #46A67E;
     border: none;
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.im-ready-submit{
+    background-color: #46A67E;
+}
+.next, .track-on-map{
+    background-color:#BDBDBD;
 }
 .page-indicators{
     display: flex;
@@ -121,24 +125,47 @@ body{
 #current-page-indicator{
     background: #46A67E;
 }
-
 #delivery-box, #choose-dish-box{
     display: none;
 }
 /* MEDIA QUERIES */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-
-} */
-
-/* https://assets.codepen.io/6060109/hamburger+1.png
-https://assets.codepen.io/6060109/delivery-man+1.png
-*/
+@media only screen and (min-width: 650px) {
+    
+    .box-container{
+        width:60%;
+        height: 38rem;  
+    }     
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 992px) {
+    body{
+        display: flex;  
+    }
+    .box-container{
+        width:30%;
+        height: 38rem;  
+    }  
     #delivery-box, #choose-dish-box{
-        display: none;
+        display: inline-block;
+    }
+    .burger-icon, .delivery-man-icon{
+        width: 110px;
+        height: 110px;
+    }
+    .burger-icon{
+        margin: 0 auto;
+        background: url("https://assets.codepen.io/6060109/hamburger+1.png") no-repeat;
+        background-size: contain;
+    }
+    .delivery-man-icon{
+        margin: 0 auto;
+        background: url("https://assets.codepen.io/6060109/delivery-man+1.png") no-repeat;
+        background-size: contain;
+    }
+    .next, .track-on-map{
+        margin: 8% auto;
     }
 }
