@@ -10,17 +10,34 @@
 </head>
 
 <body>
-    <div class="box-container">
 
+    <div class="box-container" id="choose-dish-box">
         <div class="close-btn"></div>
+        <div class="card-container">
+            <div class="burger-icon"></div>
+            <h2>Choose a dish</h2>
+            <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid
+                excepturi quis optio ipsam qui, saepe ullam dolores, at illum laudantium accusamus repellendus doloribus
+                deserunt.</p>
 
-        <div class="card1-container">
+            <button class="im-ready-submit submit" type="button">Next &#8702</button>
 
+            <div class="page-indicators">
+                <div class="dot-indicator" id="current-page-indicator"></div>
+                <div class="dot-indicator"></div>
+                <div class="dot-indicator"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container" id="confirmation-box">
+        <div class="close-btn"></div>
+        <div class="card-container">
             <div class="happy-icon"></div>
             <h2>Confirmation</h2>
-            <p class="confirmation-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas delectus
-                magni et quaerat dolorum ab,
-                adipisci veritatis debitis officia numquam impedit eos at ratione! </p>
+            <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid
+                excepturi quis optio ipsam qui, saepe ullam dolores, at illum laudantium accusamus repellendus doloribus
+                deserunt.</p>
             <div class="food-selection">
                 <img class="item-img" src="https://assets.codepen.io/6060109/Rectangle.png"></img>
                 <div class="item-description">
@@ -30,15 +47,32 @@
                 <a class="change" href="#">Change</a>
             </div>
             <button class="im-ready-submit submit" type="button">I'm Ready to Eat!</button>
-
             <div class="page-indicators">
                 <div class="dot-indicator"></div>
                 <div class="dot-indicator" id="current-page-indicator"></div>
                 <div class="dot-indicator"></div>
             </div>
         </div>
-
     </div>
+
+
+    <div class="box-container" id="delivery-box">
+        <div class="close-btn"></div>
+        <div class="card-container">
+            <div class="delivery-man-icon"></div>
+            <h2>Your order process begins</h2>
+            <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid
+                excepturi quis optio ipsam qui, saepe ullam dolores, at illum laudantium accusamus repellendus doloribus
+                deserunt.</p>
+            <button class="im-ready-submit submit" type="button">Track on the map</button>
+            <div class="page-indicators">
+                <div class="dot-indicator" id="current-page-indicator"></div>
+                <div class="dot-indicator"></div>
+                <div class="dot-indicator"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
