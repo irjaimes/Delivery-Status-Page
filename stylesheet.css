@@ -148,7 +148,7 @@ body{
         justify-content: center;
         column-gap: 20%;
     }
-    #confirmation-box{
+    #central-box{
         z-index: 1;
         width: 32%;
         height: 41rem;  
