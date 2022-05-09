@@ -1,4 +1,4 @@
-# Delivery Staty
+# Delivery Status
 
 ## Description
 
