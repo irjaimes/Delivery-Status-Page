@@ -6,11 +6,13 @@ This is a mobile responsive project to practice semantic HTML and CSS to render 
 
 It is a mock order status page for a potential client.
 
-First proposition is based on first mobile and desktop design provided by client UI/UX team.
+First proposition below is based on first mobile and desktop design provided by client UI/UX team.
 
 Second desktop proposition is based on the feedback from the client.
 
 Click [here](https://assets.codepen.io/6060109/ORDER-SUMMARY.fig) to download UX/UI design for Figma.
+
+See final responsive webpage [here](https://irjaimes.github.io/delivery-status-page/)
 
 ### Table of Contents
 
