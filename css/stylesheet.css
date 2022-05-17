@@ -16,7 +16,7 @@ body {
   width: 425px;
   height: 590px;
   text-align: center;
-  margin: 100px auto;
+  margin: 50% auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
