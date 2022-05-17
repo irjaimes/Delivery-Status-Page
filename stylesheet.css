@@ -1,183 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Ubuntu:wght@300&display=swap');
-;
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body, html{
-    min-width: 100%;
-    min-height: 100vh;  
-} 
-body{
-    background: url("https://assets.codepen.io/6060109/ZigZag.png") ;
-    background-size: cover;
+body,
+html {
+  min-width: 100%;
+  min-height: 100vh;
 }
- .box-container{
-    width:80%;
-    height: 38rem;  
-    text-align: center;
-    margin: 10% auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 40px 40px -20px #3C7B61;
- }
- 
-.close-btn{
-    background: url("https://assets.codepen.io/6060109/food-close-x.png") no-repeat ;
-    background-position: center;
-    width: 30px;
-    height: 30px; 
-    position: absolute;
-    top: 10px;
-    right: 10px;
+body {
+  background: url('https://assets.codepen.io/6060109/ZigZag.png');
+  background-size: cover;
 }
-.card-container{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 20% 10%;   
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
-.happy-icon{
-    width: 110px;
-    height: 110px;
-    background: url("https://assets.codepen.io/6060109/food-happy.png") no-repeat;
-    margin: 0 auto;
-}
-.card-container > h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    margin: 0 ;  
-}
-.message{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    color:#828282;
-    margin: 0;
-}
-.food-selection{
-    font-family: 'Montserrat', sans-serif;  
-    background-color: #F0FFF5;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin:0; 
-}
-.item-img, .item-type, .item-price {
-    margin: 0;
-    text-align: left;
+.box-container {
+  width: 425px;
+  height: 600pxpx;
+  text-align: center;
+  margin: 35px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 40px 40px -20px #3c7b61;
 }
 
-.item-description > h3{
-    
-    font-weight: 600;
-    font-size: 14px;
-} 
-.item-price{
-    font-size: 14px;
+.close-btn {
+  background: url('https://assets.codepen.io/6060109/food-close-x.png')
+    no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-.change{
-    margin: 5px 10px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #467A66;
+.card-container {
+  height: 600px;
+  box-sizing: border-box;
+  padding: 85px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.im-ready-submit, .next, .track-on-map{
-    padding: 5% 30%;
-    font-family: 'Montserrat', sans-serif;  
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.img-icon {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
 }
-.im-ready-submit{
-    background-color: #46A67E;
+
+.card-container > h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  margin: 0;
 }
-.next, .track-on-map{
-    background-color:#BDBDBD;
+.card-container > p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #828282;
+  margin: 0;
 }
-.page-indicators{
-    display: flex;
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
+.food-selection {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0fff5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
 }
-.dot-indicator{
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    background: #d6d5d5;
-    margin: 30px 7px;
+.item-img,
+.item-type,
+.item-price {
+  margin: 0;
+  text-align: left;
 }
-#current-page-indicator{
-    background: #46A67E;
+
+.item-description > h3 {
+  font-weight: 600;
+  font-size: 14px;
 }
-#delivery-box, #choose-dish-box{
-    display: none;
+.item-price {
+  font-size: 14px;
+}
+.change {
+  margin: 5px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #467a66;
+}
+.active-btn,
+.inactive-btn {
+  padding: 5% 30%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.active-btn {
+  background-color: #46a67e;
+}
+.inactive-btn {
+  background-color: #bdbdbd;
+}
+.page-indicators {
+  display: flex;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background: #d6d5d5;
+  margin: 30px 7px;
+}
+#current-page-indicator {
+  background: #46a67e;
+}
+#delivery-box,
+#choose-dish-box {
+  display: none;
 }
 
 /* MEDIA QUERIES */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 650px) {
-    
-    .box-container{
-        width:60%;
-        height: 38rem;  
-    }    
-    
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-    body{
-        display: flex;
-        justify-content: center;
-        column-gap: 20%;
-    }
-    #central-box{
-        z-index: 1;
-        width: 32%;
-        height: 41rem;  
-        position: absolute;
-        top: -13px;
-        
-    }
-    .box-container{
-        width: 30%;
-        height: 38rem;  
-    }  
-    #delivery-box, #choose-dish-box{
-        display: inline-block;
-    }
-    .burger-icon, .delivery-man-icon{
-        width: 110px;
-        height: 110px;
-    }
-    .burger-icon{
-        margin: 0 auto;
-        background: url("https://assets.codepen.io/6060109/hamburger+1.png") no-repeat;
-        background-size: contain;
-    }
-    .delivery-man-icon{
-        margin: 0 auto;
-        background: url("https://assets.codepen.io/6060109/delivery-man+1.png") no-repeat;
-        background-size: contain;
-    }
-    .next, .track-on-map{
-        margin: 8% auto;
-    }
+@media only screen and (min-width: 992px) {
+  body {
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+  }
+  #central-box {
+    z-index: 1;
+    height: 650px;
+    position: absolute;
+    top: -13px;
+  }
+
+  #delivery-box,
+  #choose-dish-box {
+    display: inline-block;
+  }
 }
