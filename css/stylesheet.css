@@ -14,7 +14,7 @@ body {
 }
 .box-container {
   width: 425px;
-  height: 600pxpx;
+  height: 600px;
   text-align: center;
   margin: 35px auto;
   display: flex;
@@ -144,7 +144,7 @@ body {
   }
   #central-box {
     z-index: 1;
-    height: 640px;
+    height: 700px;
     position: absolute;
     top: -13px;
   }
