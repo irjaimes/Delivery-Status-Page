@@ -144,7 +144,7 @@ body {
   }
   #central-box {
     z-index: 1;
-    height: 650px;
+    height: 640px;
     position: absolute;
     top: -13px;
   }
